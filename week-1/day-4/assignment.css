@@ -1,39 +1,17 @@
-body {
-    span {
+.col {
     float: left;
+    width: 30%;
   }
-  .col {
-    background-color: rgb(0, 0, 46);
-    color: white;
-    height: 800px;
-    width: 350px;
-    padding: 5px;
-    margin: 5px;
-    border: 10px solid rgb(0, 121, 129);
+
+body {
+      text-align: center;
+      background-color: white;
   }
-  img {
-    align-content: center;
-    padding: 20px;
-    margin: 10px;
-  }
-  h1,
-  h2,
-  h4 {
-    text-align: center;
-  }
-  h1 {
-    color: black;
-    text-align: center;
-  }
-  p {
-    text-align: center;
-  }
-  #leftside {
-    padding-top: 70px;
-  }
-  #rightside {
-    padding-top: 70px;
-  }
-  #middle {
-      padding-top: 20px;
-  }
+
+#leftColumn {
+    border-right: solid 20px black;
+}
+
+#rightColumn {
+    border-left: solid 20px black;
+}
