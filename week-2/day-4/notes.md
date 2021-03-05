@@ -1,0 +1,2 @@
+TWO WAYS TO UTILIZE JS WITH HTML AND CSS
+- script tag
