@@ -1,25 +1,19 @@
-function goLeft() {
-    var jsCarousel = document.getElementById('jsSlider');
-    var carousel.style.transform = 'translate(-300px)';
-}
+var currentImgPosition = 0;
 
-document.getElementById('left').addEventListener("click", function () {
-    goLeft();
+function goLeft() {
+    if (currentImgPosition > 0) {
+    currentImgPosition--;
+    var jsSlider = document.getElementById('jsSlider');
+    slider.style.transform = "translate(-" +
+    currentImgPosition * 300 + "px)";
+    }
 }
 
 function goRight() {
-    var carousel = document.getElementById('jsSlider');
-    var carousel.style.transform = 'translate(+300px)';
-}
-
-document.getElementById('right').addEventListener("click", function () {
-    goRight();
-}
-
-function randomize() {
-    var x = Math.floor(Math.random() * 256);
-    var y = Math.floor(Math.random() * 256);
-    var z = Math.floor(Math.random() * 256);
-    var bgColor = "rgb(" + x + "," + y + "," + z + ")";
-    document.body.style.background = bgColor;
+    if (currentImgPosition < 4) {
+    currentImgPosition++;
+    var jsSlider = document.getElementById('jsSlider');
+    slider.style.transform = "translate(-" +
+    currentImgPosition * 300 + "px)";
+    }
 }
