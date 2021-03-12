@@ -1,7 +1,7 @@
 body {
   height: 99vh;
   width: 99vw;
-  background-image: -moz-linear-gradient(
+  background-image: linear-gradient(
     purple,
     violet,
     red,
@@ -31,18 +31,18 @@ body {
 .buttons {
   display: flex;
   flex-wrap: wrap;
-  border: inset 4px darkgray;
+  border: inset 4px midnightblue;
 }
 
 button {
   flex: 25%;
   padding: 5%;
   font-size: 1.5em;
-  color: midnightblue;
+  color: teal;
 }
 
 .number {
-  background-color: grey;
+  background-color: midnightblue;
 }
 
 #operator {
@@ -50,15 +50,15 @@ button {
 }
 
 #equals {
-  background-color: green;
+  background-color: lime;
 }
 
-.btn-clear {
-  background-color: crimson;
+#clear {
+  background-color: lime;
 }
 
-.whyIsntThisWorking\?{
-background-image: url(https://www.nag.co.za/wp-content/uploads/2019/02/pikachu-shocked.png) !important;
+#whyIsntThisWorking\? {
+background-image: url(https://www.nag.co.za/wp-content/uploads/2019/02/pikachu-shocked.png);
 background-size: 100%;
 }
 

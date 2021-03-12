@@ -17,3 +17,9 @@ function goRight() {
     currentImgPosition * 300 + "px)";
     }
 }
+function repeat() {
+    setTimeout(function(){
+        repeat();
+    }, 1000);
+}
+
