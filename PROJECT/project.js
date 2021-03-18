@@ -1,8 +1,9 @@
 
 
+
 // Photo Slider functions: 
-// Using arrows and a clickable dot sequence to traverse
-var slideIndex = 1;
+
+var slideIndex = 0;
 showSlides(slideIndex);
 function plusSlides(n) {
     showSlides(slideIndex += n);
