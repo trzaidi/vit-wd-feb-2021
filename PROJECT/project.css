@@ -1,0 +1,164 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    background-color: black;
+}
+
+/* Video Slider */
+section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.navigation {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    display: flex;
+}
+
+li {
+    list-style: none;
+    cursor: crosshair;
+    margin: 0 10px;
+    border-radius: 4px;
+    background: black;
+    padding: 3px 3px 0;
+    opacity: 0.5;
+}
+
+li:hover {
+    opacity: 1;
+}
+
+li img {
+    width: 120px;
+    transition: 0.5s;
+}
+
+li img:hover {
+    width: 200px;
+}
+
+
+
+/* -----------------------------------------------------------
+Photography Slider --------------------------------------------------------------*/
+
+.slideshow-container {
+    position: relative;
+    margin: 0 auto;
+    height: 900px;
+    width: 1200px;
+}
+
+.mySlides {
+    display: none;
+    width:auto;
+}
+
+.cursor {
+    cursor: crosshair;
+}
+
+.prev, .next {
+    cursor: crosshair;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -50px;
+    color: white;
+    font-weight: bolder;
+    font-size:x-large
+    padding: 16px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: black(0,0,0,0.8);
+}
+
+/* Captions for the photos */
+.text {
+    color: teal;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Container for image text */
+.caption-container {
+    text-align: center;
+    background-color: white;
+    padding: 2px 16px;
+    color: teal;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}    
+
+.column {
+    float: left;
+    width: 14.2857%;
+}
+
+/* Slide Marker Dots */
+.dot {
+    cursor: crosshair;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.active, .dot:hover {
+    background-color: teal;
+}
+
+.demo {
+    opacity: 0.5;
+}
+
+.active, .demo:hover {
+    opacity: 1;
+}
+
+.contact {
+    color: teal;
+    font-size: 10px;
+}

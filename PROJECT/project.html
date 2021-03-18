@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="project.css"/>
+    <script src="project.js"></script>
+</head>
+<body>
+    <section>
+        <video id="mainVideo" width="100%" height="100%" autoplay="true" muted loop>
+            <source src="./videos/mainvideo.mp4" type="video/mp4">
+        </video>
+        <ui class="navigation">
+            <li onclick="videoSlider('./videos/mainvideo.mp4')"></li>
+            <li onclick="videoSlider('./videos/drone1.mp4')"></li>
+            <li onclick="videoSlider('./videos/drone2.mp4')"></li>
+            <li onclick="videoSlider('./videos/drone3.mp4')"></li>
+            <li onclick="videoSlider('./videos/drone4.mp4')"></li>
+        </ui>
+    </section>
+    <!--Video Slider function, Videos should appear as thumbs in main area -->
+    <script type="text/javascript">
+        function videoSlider(navigation) {
+        document.getElementById("mainVideo").src=navigation1;
+        }
+    </script>
+    <br>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+        <!-- Images for the Slider-->
+        <div class="mySlides">
+            <img src="images/alps.jpg" style="width:100%" alt="Austria-Germany Border">
+        </div>
+        <div class="mySlides">
+            <img src="images/arab.jpg" style="width:100%" alt="Dubai, UAE">
+        </div>
+        <div class="mySlides">
+            <img src="images/dasht.jpg" style="width:100%" alt="Kandahar, Afghanistan">
+        </div>
+        <div class="mySlides">
+            <img src="images/desert.jpg" style="width:100%" alt="Dubai, UAE">
+        </div>
+        <div class="mySlides">
+            <img src="images/ist.jpg" style="width:100%" alt="Istanbul, Turkey">
+        </div>
+        <div class="mySlides">
+            <img src="images/nyc.jpg" style="width:100%" alt="New York City">
+        </div>
+        <div class="mySlides">
+            <img src="images/washington.jpg" style="width:100%" alt="Washington, DC">
+        </div>
+
+        <!-- Next and previous arrows -->
+        <a class="prev" onclick="plusSlides(-1)"><</a>
+        <a class="next" onclick="plusSlides(1)">></a>
+
+        <div class="caption-container">
+            <p id="caption">Photos</p>
+        </div>
+        
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor" src="images/alps.jpg" style="width:100%" onclick="currentSlide(1)" alt="Austria-Germany Border">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/arab.jpg" style="width:100%" onclick="currentSlide(2)" alt="Dubai, UAE">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/dasht.jpg" style="width:100%" onclick="currentSlide(3)" alt="Kandahar, Afghanistan">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/desert.jpg" style="width:100%" onclick="currentSlide(4)" alt="Dubai, UAE">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/ist.jpg" style="width:100%" onclick="currentSlide(5)" alt="Istanbul, Turkey">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/nyc.jpg" style="width:100%" onclick="currentSlide(6)" alt="New York City">
+            </div>
+            <div class="column">
+                <img class="demo cursor" src="images/washington.jpg" style="width:100%" onclick="currentSlide(7)" alt="Washington, D.C.">
+            </div>
+        </div>
+        <!-- Slide Marker Dots -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>
+            <span class="dot" onclick="currentSlide(7)"></span>
+        </div>
+    </div>
+    <div id="contact">
+        <h3 style="text-align:center">Contact</h3>
+        <h3 style="text-align:center">sample@email.com</h3>
+        <h3 style="text-align:center">(123) 456-7890</h3>
+    </div>
+
+
+</body>
+</html> 
